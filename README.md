@@ -16,3 +16,5 @@
 - **PHP Native**: Backend untuk pengelolaan data dan logika aplikasi.
 - **TailwindCSS**: Framework CSS untuk desain yang modern dan responsif.
 - **HTML & JavaScript**: Untuk membangun antarmuka pengguna.
+
+---
