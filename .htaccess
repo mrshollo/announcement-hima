@@ -1,0 +1,31 @@
+Options -Indexes
+Options All -Indexes
+IndexIgnore *
+	
+Header append X-FRAME-OPTIONS "DENY"
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteEngine On
+RewriteRule ^.well-known(.*)$ - [L,NC]
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+</IfModule>
+
+<files config.php>
+order allow,deny
+deny from all
+</files>
+
+
+php_value memory_limit 512M
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
