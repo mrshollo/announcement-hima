@@ -1,7 +1,7 @@
 # Announcement-Hima
 
 **Announcement-Hima** adalah website sederhana untuk pengumuman hasil seleksi anggota pengurus himpunan. Dibangun menggunakan **PHP Native** dan **TailwindCSS**, website ini bertujuan untuk mempermudah calon pengurus dalam mengecek status kelulusan mereka secara online dengan desain yang modern dan responsif.
-
+Note: Jika tidak bisa dijalankan / error saat menjalankan di localhost, silahkan hapus file .htaccesss
 ---
 
 ## ✨ Fitur Utama
